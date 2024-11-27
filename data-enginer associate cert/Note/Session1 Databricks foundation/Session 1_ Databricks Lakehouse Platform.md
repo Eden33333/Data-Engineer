@@ -136,13 +136,10 @@ Spark Session:
  2. Detaching and reattaching a cluster
  3. Install python
  4. Restart a cluster
-
-## Primary syntax
-### Query from files
-Note: It is backticks(``) instead of sigle quote
-
-    Select * from file_formate.`file_fold\file.file_format`
-
+```
+Create Temp View customer
+Using CSV
+Options(delimeter=";",header=True,path="to/the/files")
 
  ## Appendix: questions
  1. What is the relationship between lakehouse and delta lake?
